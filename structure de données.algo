@@ -1,0 +1,29 @@
+// soit vecteur1 = [1, 2, 3]
+// soit vecteur2 = [4, 5, 6]
+
+// fonction produit_point() {
+// laisse result = 0;
+// for (let i = 0; i < vector1.length; i++) {
+// pour (je = 0; je < vecteur2.longueur; je++) {
+// résultat += vecteur1[i] * vecteur2[i]
+// }
+// }
+// renvoie le résultat ;
+// }
+// console.log (dot_product())
+
+fonction  produit_point ( vecteur1 ,  vecteur2 )  {
+    soit  résultat  =  0 ;
+    pour  ( je  =  0 ;  je  <  vecteur1 . longueur ;  je ++ )  {
+      pour  ( je  =  0 ;  je  <  vecteur2 . longueur ;  je ++ )  {
+        résultat  +=  vecteur1 [ je ]  *  vecteur2 [ je ] 
+      }
+    }
+    si  ( résultat  ===  0 )  {
+        return  ( `le produit scalaire de vector1 et vector2 est égal à ${ result } donc il est orthogonal` )
+    }  sinon  {
+        return  ( `le produit scalaire de vector1 et vector2 est égal à ${ result } donc il n'est pas orthogonal` )
+    }
+  }
+
+  consoler . log  ( produit_point ( [ 1 ,  2 ,  3 ] ,  [ 4 ,  5 ,  6 ] ) )
